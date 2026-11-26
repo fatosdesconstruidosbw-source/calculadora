@@ -64,7 +64,7 @@ Requer Android SDK (platform 34, build-tools) e NDK instalados, com `ANDROID_HOM
 ```
 rustup target add aarch64-linux-android armv7-linux-androideabi
 cargo install cargo-apk
-cargo apk build --release       # usa CARGO_APK_RELEASE_KEYSTORE e CARGO_APK_RELEASE_KEYSTORE_PASSWORD
+cargo apk build --release --lib # usa CARGO_APK_RELEASE_KEYSTORE e CARGO_APK_RELEASE_KEYSTORE_PASSWORD
 ```
 
-O APK fica em `target/release/apk/calculadora.apk`. Para testar direto num celular conectado via USB: `cargo apk run`.
+O APK fica em `target/release/apk/calculadora.apk`. Para testar direto num celular conectado via USB: `cargo apk run --lib`.

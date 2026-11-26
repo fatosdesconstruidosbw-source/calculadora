@@ -72,7 +72,7 @@ jobs:
           echo "CARGO_APK_RELEASE_KEYSTORE_PASSWORD=$PASS" >> "$GITHUB_ENV"
 
       - name: Compilar APK
-        run: cargo apk build --release
+        run: cargo apk build --release --lib
 
       - name: Copiar APK
         run: |
